@@ -25,7 +25,7 @@
 
 <body class="lexend-font">
   <!-- header and navbar -->
-  <header class="">
+  <header class="fixed top-0 left-0 right-0 z-10 bg-neutral-50 bg-opacity-95">
     <!-- navbar -->
     <nav class="bg-red-50">
       <div class="navbar pb-10 pt-5 lg:w-5/6 mx-auto">
@@ -46,19 +46,19 @@
       </div>
     </nav>
     <!-- toggle buttons -->
-    <div class="pt-16 flex justify-center gap-10">
+    <div class="pt-10 pb-5 flex justify-center gap-10 border-b-2">
       <button id="btn-donation" class="border-2 border-gray-400 rounded-md py-2 px-6">Donation</button>
       <button id="btn-history" class="border-2 border-gray-400 rounded-md py-2 px-6">History</button>
     </div>
-    <div class="divider bg-white"></div>
+    <div class="hidden divider bg-white"></div>
   </header>
 
   <!-- main part -->
-  <main>
+  <main class="relative top-60">
     <!-- donation card container start -->
-    <div class="w-11/12 lg:w-5/6 mx-auto my-10">
+    <div class="w-11/12 lg:w-5/6 mx-auto my-10 space-y-6">
       <!-- donation card 1-->
-      <div class="card lg:card-side bg-base-100 shadow-xl border border-gray-300 p-5">
+      <div class="card lg:card-side bg-base-100 shadow-md border border-gray-300 p-5">
         <figure class="lg:w-1/2">
           <img src="assets/noakhali.png" alt="noakhali-flood" />
         </figure>
@@ -76,7 +76,7 @@
         </div>
       </div>
       <!-- donation card 2-->
-      <div class="card lg:card-side bg-base-100 shadow-xl border border-gray-300 p-5">
+      <div class="card lg:card-side bg-base-100 shadow-md border border-gray-300 p-5">
         <figure class="lg:w-1/2">
           <img src="assets/feni.png" alt="noakhali-flood" />
         </figure>
@@ -94,7 +94,7 @@
         </div>
       </div>
       <!-- donation card 3-->
-      <div class="card lg:card-side bg-base-100 shadow-xl border border-gray-300 p-5">
+      <div class="card lg:card-side bg-base-100 shadow-md border border-gray-300 p-5">
         <figure class="lg:w-1/2">
           <img src="assets/quota-protest.png" alt="noakhali-flood" />
         </figure>
