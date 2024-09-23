@@ -14,7 +14,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function(){
   
   // Is input not a number | less than Zero | Greater than Account Balance
   if(isNaN(donateInputAmount) || donateInputAmount < 0 || donateInputAmount > accountBalance){
-    alert('Input is Invalid! Please put valid data..');
+    alert('Input is Invalid! Please Put a Valid Amount');
     document.getElementById('input-donation-feni').value = '';
     return;
   }
@@ -35,8 +35,8 @@ document.getElementById('btn-donate-feni').addEventListener('click', function(){
   const cardTitle = cardTitleGenerate('card-title-feni');
   const historyItem = document.createElement('div');
   historyItem.innerHTML = `
-    <h2 class="text-md font-bold mb-3"><span class="text-orange-500">${donateInputAmount}</span> Taka is ${cardTitle} </h2>
-    <p class="text-gray-400 text-sm">${new Date()}</p>
+    <h2 class="text-md font-bold mb-3"><span class="text-orange-500">${donateInputAmount}</span> Taka is Donated for ${cardTitle} </h2>
+    <p class="text-gray-400 text-sm">Date: ${new Date()}</p>
   `;
   historyItem.classList.add('border', 'p-3', 'rounded-lg');
   historyContainer.insertBefore(historyItem, historyContainer.firstChild);
