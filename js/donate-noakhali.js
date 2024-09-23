@@ -39,7 +39,7 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
     <p class="text-gray-400 text-sm">${new Date()}</p>
   `;
   historyItem.classList.add('border', 'p-3', 'rounded-lg');
-  historyContainer.appendChild(historyItem);
+  historyContainer.insertBefore(historyItem, historyContainer.firstChild);
 
   // Show modals
   document.getElementById('confirm_modal').showModal();
