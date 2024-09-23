@@ -13,5 +13,3 @@ historyBtn.addEventListener('click', function(){
   donationBtn.classList.remove('bg-lime-400', 'font-semibold', 'border-none');
 
 });
-
-console.log(donationBtn, historyBtn)
