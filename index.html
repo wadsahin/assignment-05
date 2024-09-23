@@ -47,7 +47,7 @@
     </nav>
     <!-- toggle buttons -->
     <div class="pt-10 pb-5 flex justify-center gap-10 border-b-2">
-      <button id="btn-donation" class="border-2 border-gray-400 rounded-md py-2 px-6">Donation</button>
+      <button id="btn-donation" class="border-2 border-gray-400 rounded-md py-2 px-6 bg-lime-400 font-semibold border-none">Donation</button>
       <button id="btn-history" class="border-2 border-gray-400 rounded-md py-2 px-6">History</button>
     </div>
     <div class="hidden divider bg-white"></div>
@@ -56,7 +56,7 @@
   <!-- main part -->
   <main class="w-11/12 lg:w-5/6 mx-auto relative top-60">
     <!-- donation card container start -->
-    <div class="my-10 space-y-6">
+    <div id="cards-container" class="my-10 space-y-6">
       <!-- donation card 1-->
       <div class="card lg:card-side bg-base-100 shadow-md border border-gray-300 p-5">
         <figure class="lg:w-1/2">
@@ -145,9 +145,10 @@
       </div>
     </div>
     <!-- donation card container end -->
+
     <!-- Donation History -->
     <!-- history Container -->
-    <div id="history-container" class="space-y-5">
+    <div id="history-container" class="hidden space-y-5">
 
     </div>
 

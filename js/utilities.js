@@ -20,3 +20,13 @@ function cardTitleGenerate(id){
   return cartTitleText;
 }
 
+// Hide & Show Elements
+function toggleContentShow(id){
+  // hides
+  document.getElementById('cards-container').classList.add('hidden');
+  document.getElementById('history-container').classList.add('hidden');
+
+  // Show(only)
+  document.getElementById(id).classList.remove('hidden');
+}
+
