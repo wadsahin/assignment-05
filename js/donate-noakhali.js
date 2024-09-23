@@ -19,11 +19,11 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
     return;
   }
 
-  // reduce Account Balance
+  // reduce & set Account Balance
   const availableAccountBalance = accountBalance - donateInputAmount;
   document.getElementById('account-balance').innerText = availableAccountBalance;
 
-  // Increase Card Balance
+  // Increase & set Card Balance
   const updatedCardBalance = cardBalance + donateInputAmount;
   document.getElementById('donated-balance-noakhali').innerText = updatedCardBalance;
   

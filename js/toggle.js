@@ -1,3 +1,4 @@
+// Elements Select
 const donationBtn = document.getElementById('btn-donation');
 const historyBtn = document.getElementById('btn-history');
 
@@ -8,9 +9,9 @@ donationBtn.addEventListener('click', function(){
   toggleContentShow('cards-container');
 });
 
-// Toggle style on Donation Button
+// Toggle style on History Button
 historyBtn.addEventListener('click', function(){
   historyBtn.classList.add('bg-lime-400', 'font-semibold', 'border-none');
   donationBtn.classList.remove('bg-lime-400', 'font-semibold', 'border-none');
-  toggleContentShow('history-container');
+  const toggleShow = toggleContentShow('history-container');
 });
